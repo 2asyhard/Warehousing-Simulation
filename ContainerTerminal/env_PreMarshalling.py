@@ -70,11 +70,45 @@ class Pre_marshalling_env:
 
 class play_pre_marshalling:
     def __init__(self, initial_state):
-        self.env = play_pre_marshalling(initial_state)
+        self.env = Pre_marshalling_env(initial_state)
+        self.step = 0
+        self.finished = False
 
 
+    def input_action(self):
+        '''
+        print available actions
+        input from stack num
+        input to stack num
+
+        '''
+        pass
 
 
+    def execute_action(self):
+        pass
+
+
+    def check_action_validity(self):
+        '''
+        check validity of action
+        if invalid reinput action
+        if valid execute action
+        :return:
+        '''
+        pass
+
+
+    def display_state(self):
+        '''
+        display changed state after executing action
+        :return:
+        '''
+        pass
+
+
+    def start(self):
+        pass
 
 
 
