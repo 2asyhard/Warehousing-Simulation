@@ -85,7 +85,7 @@ def select_env_settings():
 def auto_settings(stacks, tiers):
     # stacks와 tiers로 자동으로 초기 상태 생성
     state = [[0]*stacks] + [[tier*stacks+stack for stack in range(1,stacks+1)] for tier in range(tiers-1)][::-1]
-    print('Initial state')
+    print('Initial state is automatically set as below')
     for tier in state:
         print(tier)
     return state
@@ -95,8 +95,8 @@ def main():
     play = select_env()
     stacks, tiers = select_env_settings()
     state = auto_settings(stacks, tiers)
-    play(state)
-
+    play = play(state)
+    play.start()
 
 
 if __name__ == '__main__':
