@@ -25,7 +25,7 @@ def select_env():
     print('||||||||||-Select environment-||||||||||')
     env_dict = {
         1: ('Pre-marshalling', play_pre_marshalling),
-        2: ('Block Relocation Problem', play_BRP),
+        # 2: ('Block Relocation Problem', play_BRP),
     }
     while True:
         print('-'*40)
